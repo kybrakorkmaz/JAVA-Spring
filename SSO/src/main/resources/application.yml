@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: SSO
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: Iv23lisad1gbkEJQZ7gs
+            client-secret: 8b660ae2ccebd1ce53ea9eb8aa0b8dbe9e5ead4c
+

@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/twofactor
+    username: root
+    password: root
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+application:
+  security:
+    jwt:
+      security-key: 7fd6e95ea31c8199619a0736f104b042674426fbd05eb3200328d50bea540917
+      expiration: 90000 # a min and a half (60.000 ms), 86400000  a day
+      refresh-token:
+        expiration: 300000 # 5 mins (300.000 ms), 604800000  7 days
