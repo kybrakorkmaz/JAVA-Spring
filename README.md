@@ -15,6 +15,7 @@ Make sure you have the following installed before running the project:
 - Maven
 - Spring Boot 3.2.2 or later
 - A running instance of Keycloak (if using OAuth2)
+- Docker
 
 ## References
 For this project, I referred to the courses by Bouali Ali and Sergio Lema. I updated deprecated methods with the latest alternatives and implemented several other improvements based on the course content.
